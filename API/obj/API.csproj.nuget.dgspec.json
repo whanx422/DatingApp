@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hx.wong\\OneDrive - Macro Kiosk Berhad\\Desktop\\demo\\DatingApp\\API\\API.csproj": {}
+    "/Users/hanxiangwong/Desktop/Github/API/API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hx.wong\\OneDrive - Macro Kiosk Berhad\\Desktop\\demo\\DatingApp\\API\\API.csproj": {
+    "/Users/hanxiangwong/Desktop/Github/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hx.wong\\OneDrive - Macro Kiosk Berhad\\Desktop\\demo\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "/Users/hanxiangwong/Desktop/Github/API/API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\hx.wong\\OneDrive - Macro Kiosk Berhad\\Desktop\\demo\\DatingApp\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\hx.wong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hx.wong\\OneDrive - Macro Kiosk Berhad\\Desktop\\demo\\DatingApp\\API\\obj\\",
+        "projectPath": "/Users/hanxiangwong/Desktop/Github/API/API.csproj",
+        "packagesPath": "/Users/hanxiangwong/.nuget/packages/",
+        "outputPath": "/Users/hanxiangwong/Desktop/Github/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hx.wong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/hanxiangwong/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://192.168.2.187:11688/CodeEngines/nuget": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -71,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
