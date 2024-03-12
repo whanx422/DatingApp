@@ -152,3 +152,4 @@ C:/Users/hx.wong/OneDrive - Macro Kiosk Berhad/Desktop/demo/DatingApp/API/obj/De
 /Users/hanxiangwong/Desktop/Github/API/obj/Debug/net8.0/API.pdb
 /Users/hanxiangwong/Desktop/Github/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /Users/hanxiangwong/Desktop/Github/API/obj/Debug/net8.0/ref/API.dll
+/Users/hanxiangwong/Desktop/Github/API/obj/Debug/net8.0/API.sourcelink.json
