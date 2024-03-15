@@ -38,6 +38,24 @@ namespace API
 
             return user;
         }
+        [HttpPost("login")]
+        public async Task<ActionResult<AppUser>> Login(LoginDto loginDto)
+        {
+            var user = await _context.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.Username.ToLower());
+
+            if(user == null) return Unauthorized("Invalid Username.");
+
+            using var hmac = new HMACSHA512(user.PasswordSalt);
+
+            var computeHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
+
+            for(int i = 0; i < computeHash.Length; i ++)
+            {  
+                if(computeHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password.");
+            }
+
+            return user;
+        }
 
         [HttpPost("validation")]
         private async Task<Boolean> UserExist(string username)
