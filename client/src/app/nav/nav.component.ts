@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../_services/account.service';
-import { error } from 'console';
+import { Observable, of } from 'rxjs';
+import { User } from '../_models/user';
 
 @Component({
   selector: 'app-nav',
@@ -10,11 +11,12 @@ import { error } from 'console';
 export class NavComponent implements OnInit {
   model: any = {}
   loggedIn = false;
-  isDropdownOpen = false;
-  constructor(private accountService : AccountService){}
+  currentUsers$:Observable<User|null> = of(null)
+
+  constructor(public accountService : AccountService){}
 
   ngOnInit(): void {
-      this.getCurrentUser()
+    this.currentUsers$ = this.accountService.currentUsers$;
   }
 
   getCurrentUser(){
